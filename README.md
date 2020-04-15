@@ -1,3 +1,8 @@
+React Fitness App
+
+This is a simple fitness app I created with React, based on a "Todo List" app.
+
+---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
