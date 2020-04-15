@@ -13,12 +13,13 @@ body {
 
 .container {
   width: 60vw;
-  margin: 40px auto;
-  background-color: #eee
+  margin: 60px auto;
+  background-color: #eee;
 }
 
 .innerContainer {
   margin: 2em;
+  padding-bottom: 3em;
 }
 
 header {
@@ -28,6 +29,11 @@ header {
   padding: 10px;
 }
 
+form {
+  display: flex;
+  justify-content: center;
+}
+
 .textBox {
   font-size: large;
   margin: 10px;
@@ -35,7 +41,7 @@ header {
   height: 2em;
 }
 
-.submitBtn {
+.submitBtn, .startBtn, .stopBtn, .resumetBtn, .resetBtn {
   font-size: large;
   padding: 10px 15px;
   margin: 10px;
@@ -49,13 +55,42 @@ header {
   cursor: pointer;
 }
 
+.stopwatch {
+  text-align: center;
+}
+
+.timeDisplay {
+  font-size: 70px;
+}
+
+.startBtn {
+  background-color: #137C3C;
+}
+
+.stopBtn {
+  background-color: #A5201C;
+}
+
+.resumetBtn {
+  background-color: #DCA30E;
+}
+
+.exerciseWrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .removeBtn{
-  background-color: #1B3189;
+  background-color: #A5201C;
   color: #fff;
-  font-size: x-large;
+  font-size: 1.5em;
+
+  margin: 10px;
+  margin-left: 0;
+  padding: 10px;
 
   border: none;
+  border-radius: 5px;
  
-  float: right;
   cursor: pointer;
 }

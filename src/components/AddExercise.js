@@ -15,6 +15,7 @@ export class AddExercise extends Component {
 
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
+// *Want to include sets & reps fields* //
   render() {
     return (
       <form onSubmit={this.onSubmit}>

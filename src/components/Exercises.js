@@ -11,7 +11,7 @@ class Exercises extends Component {
   }
 }
 
-// ProTypes
+// ProTypes //
 Exercises.protoTypes = {
   exercise: PropTypes.array.isRequired
 }

@@ -1,6 +1,10 @@
 React Fitness App
 
-This is a simple fitness app I created with React, based on a "Todo List" app.
+This is a simple fitness app I created with React, based on a "Todo List" and "Stopwatch" tutorials.
+
+Tutorials:
+- Todo List (https://www.youtube.com/watch?v=sBws8MSXN7A&t=5231s)
+- Stopwatch (https://www.youtube.com/watch?v=qwKh4pH7KAk&t=426s)
 
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

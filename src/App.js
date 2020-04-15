@@ -4,32 +4,34 @@ import Header from './components/layout/Header';
 import AddExercise from './components/AddExercise';
 import Exercises from './components/Exercises';
 import Workouts from './components/pages/Workouts';
-import Timer from './components/pages/Timer';
+import Stopwatch from './components/pages/Stopwatch';
+import uuid from 'uuid/v4';
 
 import './App.css';
 
+// Array of exercises *Need to replace with exercise API* //
 class App extends Component {
   state = {
     exercises: [
       {
-        id: 1,
+        id: uuid(),
         title: 'Push-Up',
         completed: false
       },
       {
-        id: 2,
+        id: uuid(),
         title: 'Squat',
         completed: false
       },
       {
-        id: 3,
+        id: uuid(),
         title: 'Sit-Up',
         completed: false
       }
     ]
   }
 
-// Toggle Complete  
+// Toggle Complete //
 toggleComplete = (id) => {
   this.setState({ exercises: this.state.exercises.map(exercise => {
     if(exercise.id === id) {
@@ -39,15 +41,15 @@ toggleComplete = (id) => {
   }) });
 }  
 
-// Delete Exercise
+// Delete Exercise //
 delExercise = (id) => {
   this.setState({ exercises: [...this.state.exercises.filter(exercise => exercise.id!== id)] });
 }
 
-// Add Exercise
+// Add Exercise //
 addExercise = (title) => {
   const newExercise = {
-    id: 4,
+    id: uuid(),
     title,
     completed: false
   }
@@ -62,7 +64,7 @@ addExercise = (title) => {
             <Header />
               <div className="innerContainer">
               <Route path="/workouts" component={Workouts} />
-              <Route path="/timer" component={Timer} />
+              <Route path="/stopwatch" component={Stopwatch} />
               <Route exact path="/" render={props => (
                 <React.Fragment>
                   <AddExercise addExercise={this.addExercise} />
