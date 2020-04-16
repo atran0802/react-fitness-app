@@ -2,6 +2,8 @@ React Fitness App
 
 This is a simple fitness app I created with React, based on a "Todo List" and "Stopwatch" tutorials.
 
+Website: https://practical-euler-c9c61c.netlify.app/
+
 Tutorials:
 - Todo List (https://www.youtube.com/watch?v=sBws8MSXN7A&t=5231s)
 - Stopwatch (https://www.youtube.com/watch?v=qwKh4pH7KAk&t=426s)
