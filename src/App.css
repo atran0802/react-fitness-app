@@ -32,6 +32,7 @@ header {
 form {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .textBox {
@@ -78,6 +79,7 @@ form {
 .exerciseWrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .removeBtn{
@@ -87,10 +89,21 @@ form {
 
   margin: 10px;
   margin-left: 0;
-  padding: 10px;
+  padding: 15px;
 
   border: none;
   border-radius: 5px;
  
   cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+  }
+
+  .timeDisplay {
+    font-size: 55px;
+  }
 }
