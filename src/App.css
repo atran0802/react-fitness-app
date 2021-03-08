@@ -103,7 +103,14 @@ form {
     width: 90vw;
   }
 
+  .stopwatch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .timeDisplay {
-    font-size: 55px;
+    font-size: 40px;
   }
 }
